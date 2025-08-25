@@ -70,7 +70,7 @@ def draw_card(
     media_path: str = "./admin_panel/media/",
     ) -> tuple[Image.Image, dict[str, Any]]:
     ball = ball_instance.countryball
-    ball_health = (86, 255, 100, 255)
+    ball_health = (237, 115, 101, 255)
     ball_credits = ball.credits
     special_credits = ""
     card_name = ball.cached_regime.name
@@ -195,7 +195,7 @@ def draw_card(
         (1120, 1670),
         str(ball_instance.attack),
         font=stats_font,
-        fill=(255, 66, 92, 255),
+        fill=(252, 194, 76, 255),
         stroke_width=7,
         stroke_fill=(0, 0, 0, 255),
         anchor="ra",
@@ -230,5 +230,6 @@ def draw_card(
     artwork.close()
 
     return image, {"format": "PNG"}
+
 
 
